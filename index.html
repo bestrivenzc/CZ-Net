@@ -103,8 +103,8 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 				<br>
 				<p style="text-align:justify; font-size: 17px">
 					Even though the collaboration between traditional and neuromorphic event cameras brings prosperity to frame-event based vision applications, the performance is still confined by the resolution
-					gap crossing two modalities in both spatial and temporal domains. This paper is devoted to bridging the gap by increasing the temporal resolution for images, \ie, motion deblurring, and the spatial
-					resolution for events, \ie, event super-resolving, respectively. To this end, we introduce CrossZoom, a novel unified neural Network (CZ-Net) to jointly recover sharp latent sequences
+					gap crossing two modalities in both spatial and temporal domains. This paper is devoted to bridging the gap by increasing the temporal resolution for images, i.e., motion deblurring, and the spatial
+					resolution for events, i.e., event super-resolving, respectively. To this end, we introduce CrossZoom, a novel unified neural Network (CZ-Net) to jointly recover sharp latent sequences
 					within the exposure period of a blurry input and the corresponding High-Resolution (HR) events. Specifically, we present multi-scale blur-event fusion architectures that leverage the scale-variant
 					properties and effectively fuse cross-modality information to achieve cross-enhancement. Attention-based adaptive enhancement and cross-interaction prediction modules are devised to alleviate the
 					distortions inherent in Low-Resolution (LR) events and enhance the final results through the prior blur-event complementary information. Furthermore, we propose a new dataset containing HR sharp
@@ -130,12 +130,13 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 				</div>
 				<br>
 				<p style="text-align:justify; font-size: 17px">
-					To the best of our knowledge, no publicly released dataset is available yet for Motion Deblurring and Event Super-Reosolving with Low-Resolution (LR) events. It motivates us to build
-					 a new dataset for Cross-Resolution Deblurring and Resolving (CRDR) containing High Resolution (HR) sharp and blurry images and the corresponding <i>real-world</i> LR event streams. 
-					 To simultaneously collect images and events, we build a hybrid camera system composed of an LR DAVIS346 event camera of resolution 346*260 and an HR FLIR BlackFly U332S4 RGB 
-					 camera of resolution 2048*1536 working at a frame rate of 118 FPS. A beam splitter connects two cameras to achieve minimum spatial parallax 
-					 between RGB frames and events. Since two cameras provide vision perceptions of different modalities and spatial resolutions, calibrations in both spatial and temporal domains are 
-					 essential to ensure alignments between collected RGB frames and events.
+					To our knowledge, no publicly released dataset is available yet for uEDSR tasks with Low-Resolution (LR) events. 
+					It motivates us to build a new dataset for Cross-Resolution Deblurring and Resolving (CRDR) containing paired HR sharp-blurry
+					images and the corresponding HR-LR event streams. To simultaneously collect images and events, we build a hybrid camera system 
+					composed of an LR DAVIS346 event camera of resolution 346x260 and an HR FLIR BlackFly U332S4 RGB camera of resolution 2048x1536 
+					working at a frame rate of 118 FPS. A beam splitter connects two cameras to achieve minimum spatial parallax between RGB frames 
+					and events. Since two cameras provide vision perceptions of different modalities and spatial resolutions, calibrations in both 
+					spatial and temporal domains are essential to ensure alignments between collected RGB frames and events.
 				</p>
 				<img src="files/crdr_dataset_png.png" width="1150px" class="img-responsive center-block" />
 			</div>
